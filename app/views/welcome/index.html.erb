@@ -5,10 +5,11 @@
   <div id="main-content">
     <h2>How it works?</h2>
     <ul>
-      <li><h3>Login through Facebook<button>Facebook</button></h3></li>
-      <li><h3>List your product on our platform</h3></li>
+      <li><h3>Login through Facebook<%= link_to 'Facebook', '/auth/facebook' %></h3></li>
+      <li><h3>List your product on our platform<div class="fb-login-button" data-max-rows="2" data-size="large" data-show-faces="true" data-auto-logout-link="false">Facebook</div></h3></li>
       <li><h3>Your friends Who are logged in can see the products<h3></li>
       <li><h3>They can chose to buy your products<h3></li>
     </ul>
   </div>
 </div>
+<div id="fb-root"></div>
