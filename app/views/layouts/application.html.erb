@@ -12,10 +12,15 @@
     <header class="row">
       <h1 class="unit">Welcome to Your Friends Market Place</h1>
       <% if current_user %>
-      <div class="user">Signed in as <strong><%= current_user.name %></strong></div>
-        <%= link_to 'SignOut', signout_path, id: "sign_out" %>
+        <div class="user">
+          Signed in as <strong><%= current_user.name %></strong>
+          <img src=<%= current_user.image %>/>
+          <%= link_to 'SignOut', signout_path, id: "sign_out" %>
+        </div>
       <% else %>
-        <%= link_to 'Facebook', '/auth/facebook' %>
+        <div id="login">
+          <%= link_to 'Login through Facebook', '/auth/facebook' %>
+        </div>
       <% end %>
     </header>
       <%= yield %>

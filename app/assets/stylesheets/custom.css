@@ -41,7 +41,7 @@ button {
  
 }
 
-.imag-index img{
+.imag-index img, header img{
   border-radius: 128px;
   box-shadow: 3px 3px 3px #777777;
 }
@@ -58,4 +58,8 @@ button {
   margin: 0 auto;
   width: 50%;
   padding: 20px;
+}
+
+header #login {
+  margin-top: 50px;
 }
