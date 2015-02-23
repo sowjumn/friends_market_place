@@ -22,7 +22,8 @@
       <div class="listing">
         <h3><%= listing.name %></h3>
         <p><%= listing.description %></p>
-        <button>I want It</button>
+        <input type="hidden" name="user_id" value="<%= listing.user_id %>"/>
+        <button id="<%= listing.id %>">I want It</button>
       </div>
     </div>
   <% end %>

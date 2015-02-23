@@ -13,4 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require facebook
+//= require main
 //= require_tree .
