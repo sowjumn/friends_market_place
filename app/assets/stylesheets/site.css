@@ -4,20 +4,26 @@ body {
 }
 
 header {
-  height: 200px;
+  height: 150px;
   width: 100%;
   background-color: #479898;
 }
 
+header .user {
+  padding: 50px;
+}
+
 h1 {
   font-size: 34px;
-  padding: 70px;
+  padding: 50px;
   text-align: center;
+  color: #FBFFC0;
 }
 
 h2 {
-  font-size: 28px;
-  margin: 50px;
+  font-size: 25px;
+  margin: 18px;
+  color: #479898;
 }
 
 h3 {
@@ -49,4 +55,9 @@ input {
 
 fieldset {
   margin: 20px;
+}
+
+input[type='submit'] {
+  width: 150px;
+  font-size: 40px;
 }

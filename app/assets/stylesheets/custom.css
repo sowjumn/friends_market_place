@@ -3,21 +3,16 @@
   height: 1000px;
 }
 
-#main-content {
-  margin: 0 auto;
-  width: 75%;
-  padding: 40px;
+.left-nav {
+  height: 850px;
+  border-right: 1px solid green;
 }
 
-#main-content ul {
-  margin: 40px;
+#main-container ul li {
+  margin: 15px 18px 15px 18px;
 }
 
-#main-content ul li {
-  margin: 5px 45px 5px 45px;
-}
-
-header button {
+button {
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
   background-image: -moz-linear-gradient(top, #3498db, #2980b9);
@@ -29,10 +24,38 @@ header button {
   border-radius: 6px;
   font-family: Arial;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 14px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   border-color: #D0D0E8;
-  margin: 20px;
   letter-spacing: 2px;
+  width: 115px;
+}
+
+.spacing {
+  padding: 10px;
+}
+
+.imag-index {
+  float: left;
+ 
+}
+
+.imag-index img{
+  border-radius: 128px;
+  box-shadow: 3px 3px 3px #777777;
+}
+
+.each-listing {
+  margin: 30px;
+}
+
+.listing {
+  margin-left: 120px;
+}
+
+.listings {
+  margin: 0 auto;
+  width: 50%;
+  padding: 20px;
 }

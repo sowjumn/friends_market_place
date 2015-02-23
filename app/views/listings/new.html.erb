@@ -1,4 +1,5 @@
-<div class="main_container">
+<div class="listings">
+  <h2>List Your Product here</h2>
 <%= form_for @listing do |f| %>
   <fieldset class="row">
     <%= f.label :name %> 
@@ -9,8 +10,11 @@
     <%= f.label :description %>
     <%= f.text_area :description, size: '100x10' %>
   </fieldset>
-
-  <%= f.file_field :avatar %>
-  <%= f.submit %>
+  <fieldset class="row">
+    <%= f.file_field :avatar %>
+  </fieldset>
+  <fieldset class="row">
+    <%= f.submit %>
+  </fieldset>
 <% end %>
 </div>

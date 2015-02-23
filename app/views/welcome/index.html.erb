@@ -1,7 +1,29 @@
+<div class="unit col1of3 left-nav">
 <h2>How it works?</h2>
 <ul>
   <li><h3>Login through Facebook</h3></li>
-  <li><h3>List your product on our platform</h3></li>
-  <li><h3>Your friends Who are logged in can see the products<h3></li>
-  <li><h3>They can chose to buy your products<h3></li>
+  <li><h3><a href="/listings/new">List your product on our platform</a></h3></li>
+  <li><h3>A Facebook User can express interest<h3></li>
+  <li><h3>An email is sent to both you and the buyer through our platform<h3></li>
+  <li><h3>You can exchange details and buy your product<h3></li>
 </ul>
+<h2>Menu</h2>
+  <ul>
+    <li><h3><a href="/listings">My Listings</a></h3></li>
+  </ul>
+</div>
+
+<div class="lastUnit spacing">
+  <% @listings.each do |listing| %>
+    <div class="row each-listing">
+      <div class="imag-index">
+        <img src=<%= listing.avatar.url(:thumb) %> width="100px" height="100px"/>
+      </div>
+      <div class="listing">
+        <h3><%= listing.name %></h3>
+        <p><%= listing.description %></p>
+        <button>I want It</button>
+      </div>
+    </div>
+  <% end %>
+</div>
