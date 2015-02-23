@@ -19,7 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'omniauth-facebook'
-
+gem "koala"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
