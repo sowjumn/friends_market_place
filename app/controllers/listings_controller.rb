@@ -31,6 +31,6 @@ class ListingsController < ApplicationController
 
   private
     def listing_params
-      params.require(:listing).permit(:name,:description).merge(user_id: current_user.id)
+      params.require(:listing).permit(:name,:description,:avatar).merge(user_id: current_user.id)
     end
 end

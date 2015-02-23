@@ -12,3 +12,7 @@
   <label>Listed By: </label>
   <p><%= @listing.user.name %></p>
 </fieldset>
+
+<%= image_tag @listing.avatar.url %>
+<%= image_tag @listing.avatar.url(:medium) %>
+<%= image_tag @listing.avatar.url(:thumb) %>
