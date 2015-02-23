@@ -23,7 +23,7 @@
         <h3><%= listing.name %></h3>
         <p><%= listing.description %></p>
         <input type="hidden" name="user_id" value="<%= listing.user_id %>"/>
-        <button id="<%= listing.id %>">I want It</button>
+        <button id="<%= listing.id %>"><%= current_user_interested?(listing.id) ? 'Requested' : 'I want it' %></button>
       </div>
     </div>
   <% end %>

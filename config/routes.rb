@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/auth/failure', to: redirect('/')
   
   resources :listings
+  resources :interests, only: [:create, :destroy]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
