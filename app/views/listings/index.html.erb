@@ -1,0 +1,5 @@
+<% @listings.each do |listing| %>
+  <%= listing.name %>
+<% end %>
+
+<%= link_to "Post a new listing", new_listing_path %>

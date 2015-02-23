@@ -23,3 +23,30 @@ h2 {
 h3 {
   font-size: 18px;
 }
+
+input, textarea, select, button {
+  display: block;
+  width: 300px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -mox-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin: 5px;
+}
+
+p {
+  margin: 5px;
+}
+
+
+input {
+  height: 28px;
+}
+
+fieldset {
+  margin: 20px;
+}

@@ -8,8 +8,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+  <div id="main-container">
+    <header class="row">
+      <h1 class="unit col1of2">Welcome to Your Friends Market Place</h1>
+      <% if current_user %>
+        <label>Signed in as <strong><%= current_user.name %></strong></label>
+        <%= link_to 'SignOut', signout_path, id: "sign_out" %>
+      <% else %>
+        <%= link_to 'Facebook', '/auth/facebook' %>
+      <% end %>
+    </header>
+    <div id="main-content">
+      <%= yield %>
+    </div>
+  </div>
 <%= javascript_include_tag 'application' %>
+
 </body>
 </html>

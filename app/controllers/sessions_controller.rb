@@ -3,11 +3,12 @@ class SessionsController < ApplicationController
     puts "#$$$$$$$$$$$$$$$$$$$ #{env["omniauth.auth"]}"
     user = User.from_omniauth(env["omniauth.auth"])
     session[:user_id] = user.id
-    redirect_to root_url
+    redirect_to listings_path
   end
 
-  private
-    def facebook_params
-
-    end
+  def destroy
+    session[:user_id] = nil
+    current_user = nil
+    redirect_to root_url
+  end  
 end
