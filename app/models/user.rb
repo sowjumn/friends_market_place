@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_many :listings
-  has_many :friends
+  has_many :interests
   
   def self.from_omniauth(auth)
     where(provider: auth[:provider],uid: auth[:uid]).first_or_initialize.tap do |user|
