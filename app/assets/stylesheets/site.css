@@ -4,20 +4,29 @@ body {
 }
 
 header {
-  height: 150px;
+  height: 700px;
   width: 100%;
-  background-color: #479898;
+  margin: 0 auto;
+  background-image: url('bridge.jpg');
+  background-repeat: no-repeat;
+  background-size: 2600px 1370px;
+  background-position:  center center; 
+}
+
+header .welcome {
+  width: 60%;
+  margin: 0 auto;
 }
 
 header .user {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 h1 {
   font-size: 34px;
   padding: 50px;
   text-align: center;
-  color: #FBFFC0;
+  color: #250A28;
 }
 
 h2 {
@@ -60,4 +69,23 @@ fieldset {
 input[type='submit'] {
   width: 150px;
   font-size: 40px;
+}
+
+nav {
+  width: 50%;
+  margin: 0 auto;
+}
+
+nav a {
+  color: #479898;
+  text-decoration: none;
+}
+
+nav li {
+  padding: 10px;
+}
+
+nav li:hover {
+  background-color: #D3B9D3;
+  border-radius: 5px;
 }
