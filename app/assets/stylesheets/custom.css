@@ -63,3 +63,12 @@ header #login {
 section#my-listings .listing{
   padding-top: 30px;
 }
+
+#how-it-works {
+  padding: 80px;
+}
+
+#how-it-works li{
+  padding: 10px;
+  list-style-type: circle;
+}
