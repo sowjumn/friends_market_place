@@ -8,37 +8,30 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="main-container">
-    <header class="row">
-      <div class="welcome">
-        <h1 class="unit">Welcome to Your Friends Market Place</h1>
-        <% if current_user %>
-          <div class="user">
-            <input id="current_active_user" type="hidden" name="current_active_user_id" value="<%= current_user.id %>"/>
-            <img src=<%= current_user.image %>/>
-          </div>
-        <% end %>
-      </div>
-    </header>
+  <header>
+    <h1>Market Place</h1>
     <nav>
       <ul>
-        <li class="unit">
-          <h3>
+        <li>
+          <% if current_user %>
+            <input id="current_active_user" type="hidden" name="current_active_user_id" value="<%= current_user.id %>"/>
+            <img src=<%= current_user.image %>/>
+          <% end %>
+        </li>
+        <li>
           <% if current_user %>
             <%= link_to 'SignOut', signout_path, id: "sign_out" %>
           <% else %>
             <%= link_to 'Login', '/auth/facebook' %>
           <% end %>
-          </h3>
         </li>
-        <li class="unit"><h3><a href="/listings/new">List</a></h3></li>
-        <li class="unit"><h3><a href="/listings">My Listings</a></h3></li>
-        <li class="unit"><h3><a href="/#howitworks">How it works</a></h3></li>
+        <li><a href="/listings/new">List</a></li>
+        <li><a href="/listings">My Listings</a></li>
+        <li><a href="/#howitworks">How it works</a></li>
       </ul>
     </nav>
-      <%= yield %>
-  </div>
-<%= javascript_include_tag 'application' %>
-
+  </header>
+  <%= yield %>
+  <%= javascript_include_tag 'application' %>
 </body>
 </html>

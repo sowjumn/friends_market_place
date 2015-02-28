@@ -1,25 +1,15 @@
-<!-- div class="unit col1of3 left-nav">
-<h2>How it works?</h2>
-
-<h2>Menu</h2>
-  <ul>
-    <li><h3><a href="/listings">My Listings</a></h3></li>
-  </ul>
-</div>
-
-<div class="lastUnit spacing">
+<section id="welcome">
   <% @listings.each do |listing| %>
-    <div class="row each-listing">
+    <article class="row each-listing">
       <div class="imag-index">
         <img src=<%= listing.avatar.url(:thumb) %> width="100px" height="100px"/>
       </div>
       <div class="listing">
-        <h3><%= listing.name %></h3>
+        <h1><%= listing.name %></h1>
         <p><%= listing.description %></p>
         <input type="hidden" name="user_id" value="<%= listing.user_id %>"/>
         <button id="<%= listing.id %>" interest_id="<%=get_interest_id(listing.id)%>"><%= current_user_interested?(listing.id) ? 'Requested' : 'I want it' %></button>
       </div>
-    </div>
+    </article>
   <% end %>
-</div>
- -->
+</section>

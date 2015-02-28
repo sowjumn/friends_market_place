@@ -3,11 +3,6 @@
   height: 1000px;
 }
 
-.left-nav {
-  height: 850px;
-  border-right: 1px solid green;
-}
-
 #main-container ul li {
   margin: 15px 18px 15px 18px;
 }
@@ -52,6 +47,7 @@ button {
 
 .listing {
   margin-left: 120px;
+  padding-top: 8px;
 }
 
 .listings {

@@ -1,32 +1,39 @@
 body {
   margin: 0;
   font-family: 'Droid Serif';
+  background-color: #FAEDD6;
+  color: #479898;
+  font-size: 18px;
 }
 
 header {
-  height: 700px;
+  height: 150px;
   width: 100%;
   margin: 0 auto;
-  background-image: url('bridge.jpg');
+  background-image: url('vintage_flower.jpg');
   background-repeat: no-repeat;
-  background-size: 2600px 1370px;
-  background-position:  center center; 
+  background-position: center center;
 }
 
-header .welcome {
-  width: 60%;
-  margin: 0 auto;
-}
-
-header .user {
-  padding-top: 40px;
-}
-
-h1 {
+header h1 {
   font-size: 34px;
-  padding: 50px;
-  text-align: center;
-  color: #250A28;
+  color: #FAEDD6;
+  float: right;
+  padding-top: 50px;
+  padding-right: 10px;
+}
+
+header nav {
+  padding-top: 50px;
+}
+
+header nav li {
+  float: left;
+  font-size: 24px;
+}
+
+header nav li:first-child {
+  margin-top: -12px;
 }
 
 h2 {
@@ -57,7 +64,6 @@ p {
   margin: 5px;
 }
 
-
 input {
   height: 28px;
 }
@@ -71,21 +77,28 @@ input[type='submit'] {
   font-size: 40px;
 }
 
-nav {
-  width: 50%;
-  margin: 0 auto;
-}
-
 nav a {
   color: #479898;
   text-decoration: none;
+}
+
+nav a:hover {
+  color: #FAEDD6;
 }
 
 nav li {
   padding: 10px;
 }
 
-nav li:hover {
-  background-color: #D3B9D3;
-  border-radius: 5px;
+section#welcome {
+  width: 80%;
+  margin: 0 auto;
+}
+
+article h1 {
+  font-size: 20px;
+}
+
+article p {
+  font-size: 16px;
 }
