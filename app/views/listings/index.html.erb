@@ -1,16 +1,14 @@
-<div class="listings">
-<% @listings.each do |listing| %>
-  <div class="row each-listing">
-    <div class="imag-index">
-      <img src=<%= listing.avatar.url(:thumb) %> width="100px" height="100px"/>
-    </div>
-    <div class="listing">
-      <h3><%= listing.name %></h3>
-      <p><%= listing.description %></p>
-      <button>I want It</button>
-    </div>
-  </div>
-<% end %>
-
-<%= link_to "Post a new listing", new_listing_path %>
-</div>
+<section id="my-listings">
+  <% @listings.each do |listing| %>
+    <article class="row each-listing">
+      <div class="imag-index">
+        <img src=<%= listing.avatar.url(:thumb) %> width="100px" height="100px"/>
+      </div>
+      <div class="listing">
+        <h1><%= listing.name %></h1>
+        <p><%= listing.description %></p>
+      </div>
+    </article>
+  <% end %>
+  <%= link_to "Post a new listing", new_listing_path %>
+</section>

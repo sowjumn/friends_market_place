@@ -59,3 +59,7 @@ button {
 header #login {
   margin-top: 50px;
 }
+
+section#my-listings .listing{
+  padding-top: 30px;
+}

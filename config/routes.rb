@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get '/auth/:provider/callback', to: 'sessions#create'
   get 'signout', to: 'sessions#destroy'
   get '/auth/failure', to: redirect('/')
-  
+  get '/howitworks', to: 'welcome#howitworks'
   resources :listings
   resources :interests, only: [:create, :destroy]
   # Example of regular route:
