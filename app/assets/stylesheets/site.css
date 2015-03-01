@@ -2,6 +2,8 @@ body {
   margin: 0;
   font-family: 'Droid Serif';
   background-color: #FAEDD6;
+  background-image: url('ricepaper_v3.png');
+  background-repeat: repeat;
   color: #479898;
   font-size: 18px;
 }

@@ -10,7 +10,9 @@ group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
   gem 'factory_girl_rails'
+  gem 'database_cleaner'
 end
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 gem 'pg'
